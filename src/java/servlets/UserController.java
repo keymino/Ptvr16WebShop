@@ -29,7 +29,8 @@ import utils.PagePathLoader;
 @WebServlet(name = "UserController", urlPatterns = {
     "/showChangePassword",
     "/changePassword",
-    "/showListProducts"
+    "/showListProducts",
+    "/showProduct"
     
     
 })

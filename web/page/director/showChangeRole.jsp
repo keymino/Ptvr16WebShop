@@ -1,15 +1,13 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Admin panel</title>
-    </head>
-    <body>
-        <h1>Страница Директора</h1>
-        Список пользователей:
-        <BR>
+<div class="container">
+    
+    
+        <h1 class="text-center">Страница Директора</h1>
+       
+        <p class="text-center">Список пользователей: </p>
+        <br>
+        <img src="images//2.jpg" class="img-fluid" alt="Адаптивные изображения">
+        <div class="col-md-3 offset-md-5 align-self-center">
+            
         <form action="changeRole" method="POST">
             <c:forEach var="role" items="${listRoles}">
                 <c:if test="${role.id == 3}">
@@ -29,5 +27,5 @@
             <p><input type="submit" value="Назначить"></p>
             <a href="index">Главная страница</a><br>
         </form>
-    </body>
-</html>
+    </div>
+</div>

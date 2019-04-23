@@ -1,6 +1,7 @@
 package servlets;
 
 import entity.Cover;
+import entity.CoverProduct;
 import entity.Product;
 import entity.User;
 import java.io.IOException;
@@ -90,8 +91,12 @@ public class ManagerController extends HttpServlet {
                 String name = request.getParameter("name");
                 String count = request.getParameter("count");
                 String price = request.getParameter("price");
+                String coverId = request.getParameter("coverId");
+                Cover cover = coverFacade.find(new Long (coverId));
                 Product product = new Product(new Integer(price), name, new Integer(count));
                 productFacade.create(product);
+                CoverProduct coverProduct = new CoverProduct(product, cover);
+                coverProductFacade.create(coverProduct);
                 request.setAttribute("info", "Продукт \""+product.getName()+"\"добавлен");
                 request.getRequestDispatcher("/showAddNewProduct").forward(request, response);
                 break;
