@@ -1,12 +1,5 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Изменение пароля</title>
-    </head>
-    <body>
-        <h1>Изменить пароль</h1>
+<div class="container text-center">
+        <h4>Изменить пароль</h4>
         <form action="changePassword" method="POST">
         <br>
         Введите действующий пароль:
@@ -21,5 +14,4 @@
         <input type="submit" value="Изменить пароль">
         </form>
         <a href="index">Главная страница</a><br>
-    </body>
-</html>
+</div>

@@ -1,20 +1,11 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Покупатель</title>
-    </head>
-    <body>
-        <H1>Добро пожаловать в наш магазин</H1>
+<blockquote class="blockquote text-center">
+    <H1>Добро пожаловать в наш магазин</H1>
+</blockquote>
+        <img src="images//1.png" class="rounded float-left" alt="...">
         ${info}<br>
-        <a href="showLogin">Войти</a><br>
-        <a href="logout">Выйти</a><br>
-        <a href="showChangePassword">Изменить пароль</a><br>
-        <br>
-        <a href="showAddMoney">Добавить деньги</a><br>
-        <a href="showListProducts">Список продуктов</a><br>
-        
-        
-    </body>
-</html>
+            <a href="showLogin"><button type="button" class="btn btn-outline-info btn-sm" style="width: 160px">Войти</button></a><br>
+            <a href="logout"><button type="button" class="btn btn-outline-info btn-sm" style="width: 160px">Выйти</button></a><br>
+            <a href="showChangePassword"><button type="button" class="btn btn-outline-info btn-sm" style="width: 160px">Изменить пароль</button></a><br>
+            <br>
+            <a href="showAddMoney"><button type="button" class="btn btn-outline-dark btn-sm" style="width: 160px">Добавить деньги</button></a><br>
+            <a href="showListProducts"><button type="button" class="btn btn-outline-dark btn-sm" style="width: 160px">Список продуктов</button></a><br>

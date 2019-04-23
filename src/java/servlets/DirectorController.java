@@ -17,6 +17,7 @@ import session.BuyerFacade;
 import session.UserFacade;
 import session.UserRolesFacade;
 import utils.Encription;
+import utils.PagePathLoader;
 
 
 @WebServlet(name = "DirectorController", urlPatterns = {
@@ -69,14 +70,14 @@ public class DirectorController extends HttpServlet {
         switch (path) {
             
             case "/showAddMoney":
-                request.getRequestDispatcher("/addMoney.jsp").forward(request, response);
+                request.getRequestDispatcher(PagePathLoader.getPagePath("addMoney")).forward(request, response);
             break;   
             case "/addMoney":
                 String money=request.getParameter("money");
                 regUser.getBuyer().setMoney(regUser.getBuyer().getMoney()+new Integer(money));
                 userFacade.edit(regUser);
                 request.setAttribute("info","Денег у покупателя: " + regUser.getBuyer().getMoney());
-                request.getRequestDispatcher("/index.jsp").forward(request, response);
+                request.getRequestDispatcher(PagePathLoader.getPagePath("directorIndex")).forward(request, response);
                 break;
         }
         
