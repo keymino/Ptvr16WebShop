@@ -1,13 +1,9 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Пополнить баланс</title>
-    </head>
-    <body>
+<div class="container">
+    <blockquote class="blockquote text-center">
         <h1>Добавте деньги на свою карточку!</h1>
+    </blockquote>
+        <div class="col-md-10 offset-md-2 align-self-center" style="margin-top: 60px">
+        <img src="images//money.jpg" class="rounded float-left" alt="Адаптивные изображения" style="border: black solid 1px">
         <a href="index">Главная страница</a><br>
         <p>${info}</p>
         Вы вошли как ${username}<br>
@@ -16,5 +12,5 @@
             <br>
             <input type="submit" value="Добавить деньги на карту"> 
         </form>
-    </body>
-</html>
+    </div>
+</div>

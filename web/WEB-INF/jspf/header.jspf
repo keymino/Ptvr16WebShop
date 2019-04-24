@@ -9,5 +9,5 @@
 
         <title>Магазин</title>
     </head>
-    <body>
+    <body style="background-color: #DCDCDC; color: black">
         <div class="container">

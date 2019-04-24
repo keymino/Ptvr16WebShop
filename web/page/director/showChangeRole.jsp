@@ -1,13 +1,11 @@
 <div class="container">
     
     
-        <h1 class="text-center">Страница Директора</h1>
+        <h1 class="text-center" style="margin-top: 60px">Страница Директора</h1>
        
         <p class="text-center">Список пользователей: </p>
-        <br>
-        <img src="images//2.jpg" class="img-fluid" alt="Адаптивные изображения">
-        <div class="col-md-3 offset-md-5 align-self-center">
-            
+        <br><div class="col-md-8 offset-md-2 align-self-center">
+        <img src="images//2.jpg" class="rounded float-left" alt="Адаптивные изображения">
         <form action="changeRole" method="POST">
             <c:forEach var="role" items="${listRoles}">
                 <c:if test="${role.id == 3}">

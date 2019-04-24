@@ -1,6 +1,8 @@
 <blockquote class="blockquote text-center">
     <H1>Добро пожаловать в наш магазин</H1>
 </blockquote>
+<div class="container">
+    <div class="col-md-10 offset-md-1 align-self-center">
     <img src="images//1.png" class="rounded float-left" alt="...">
         ${info}<br>
             <a href="showLogin"><button type="button" class="btn btn-outline-info btn-sm" style="width: 160px">Войти</button></a><br>
@@ -12,3 +14,5 @@
             <a href="showListBuyers"><button type="button" class="btn btn-outline-dark btn-sm" style="width: 160px">Список покупателей</button></a><br>
             <a href="showListProducts"><button type="button" class="btn btn-outline-dark btn-sm" style="width: 160px">Список продуктов</button></a><br>
             <a href="showPageForGiveProduct"><button type="button" class="btn btn-outline-dark btn-sm" style="width: 160px">Выдать продукт</button></a><br>
+    </div>
+</div>
