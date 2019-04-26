@@ -5,13 +5,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images//shop.png" class="d-block w-100 img-fluid rounded" alt="..." style="border: 3px outset #778899">
+                        <img src="images//shop.png" class="d-block w-100 img-fluid rounded" alt="..." style="border: 3px outset #778899; height: 500px;">
                     </div>
                     <div class="carousel-item">
-                        <img src="images//shop2.jpg" class="d-block w-100 img-fluid rounded" alt="..." style="border: 3px outset #778899">
+                        <img src="images//shop2.jpg" class="d-block w-100 img-fluid rounded" alt="..." style="border: 3px outset #778899; height: 500px">
                     </div>
                     <div class="carousel-item">
-                        <img src="images//3.png" class="d-block w-100 img-fluid rounded" alt="..." style="border: 3px outset #778899">
+                        <img src="images//shop3.png" class="d-block w-100 img-fluid rounded" alt="..." style="border: 3px outset #778899; height: 500px">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

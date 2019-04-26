@@ -70,13 +70,13 @@ public class DirectorController extends HttpServlet {
         switch (path) {
             
             case "/showAddMoney":
+                request.setAttribute("username",regUser.getLogin());
                 request.getRequestDispatcher(PagePathLoader.getPagePath("addMoney")).forward(request, response);
             break;   
             case "/addMoney":
                 String money=request.getParameter("money");
                 regUser.getBuyer().setMoney(regUser.getBuyer().getMoney()+new Integer(money));
                 userFacade.edit(regUser);
-                request.setAttribute("info","Денег у покупателя: " + regUser.getBuyer().getMoney());
                 request.getRequestDispatcher(PagePathLoader.getPagePath("directorIndex")).forward(request, response);
                 break;
         }

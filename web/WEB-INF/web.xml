@@ -14,12 +14,14 @@
             <display-name>template1</display-name>
             <url-pattern>/page/manager/showAddNewProduct.jsp</url-pattern>
             <url-pattern>/page/manager/showUploadFile.jsp</url-pattern>
+            <url-pattern>/page/seller/showPageForGiveProduct.jsp</url-pattern>
             <url-pattern>/showLogin.jsp</url-pattern>
             <url-pattern>/page/customer/addMoney.jsp</url-pattern>
             <url-pattern>/page/customer/showProduct.jsp</url-pattern>
             <url-pattern>/page/customer/showListProducts.jsp</url-pattern>
             <url-pattern>/page/admin/changePassword.jsp</url-pattern>
             <url-pattern>/showRegistration.jsp</url-pattern>
+            <url-pattern>/page/seller/showListBuyers.jsp</url-pattern>
             <url-pattern>/page/admin/index.jsp</url-pattern>
             <url-pattern>/page/seller/index.jsp</url-pattern>
             <url-pattern>/page/director/showChangeRole.jsp</url-pattern>
